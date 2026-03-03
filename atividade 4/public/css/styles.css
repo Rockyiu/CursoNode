@@ -1,0 +1,99 @@
+/* Reset básico para remover margens padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo do corpo da página (Dark Mode) */
+body {
+  background-color: #121214;
+  color: #e1e1e6;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Títulos */
+h1 {
+  color: #04d361; /* Verde destaque */
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Lista de produtos da Home */
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+/* Cartões de produtos */
+ul li {
+  background-color: #202024;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid #29292e;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+ul li:hover {
+  transform: translateY(-5px);
+  border-color: #04d361;
+}
+
+ul li h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Links em geral (funcionando como botões) */
+a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #8257e5; /* Roxo vibrante */
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+a:hover {
+  background-color: #9466ff;
+}
+
+/* Estilos específicos da página de detalhes do produto */
+.product-details {
+  background-color: #202024;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-align: center;
+  border: 1px solid #29292e;
+  min-width: 300px;
+}
+
+.product-details p {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #c4c4cc;
+}
+
+/* Botão de voltar (Sobrescrevendo a cor do link padrão) */
+a[href="/"] {
+  background-color: #323238;
+}
+
+a[href="/"]:hover {
+  background-color: #04d361;
+}
